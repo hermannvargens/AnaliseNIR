@@ -11,7 +11,7 @@ from io import BytesIO
 app = Flask(__name__)
 
 # Carregar modelo (substitua pelo nome correto do modelo)
-model = joblib.load('rf.pkl')  # ou 'pls.pkl', 'knn.pkl'
+model = joblib.load('pls.pkl')  # ou 'pls.pkl', 'knn.pkl'
 
 def process_csv(file_stream):
     df = pd.read_csv(file_stream)
